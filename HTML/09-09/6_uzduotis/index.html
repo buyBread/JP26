@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 užduotis</title>
+</head>
+<body>
+    <form>
+        <label for="first_name">Vardas</label>
+        <input type="text" id="first_name" name="first_name">
+        <br/>
+
+        <label for="last_name">Pavardė</label>
+        <input type="text" id="last_name" name="last_name">
+        <br/>
+
+        <label for="email">El. paštas</label>
+        <input type="text" id="email" name="email">
+        <br/>
+
+        <label for="password">Slaptažodis</label>
+        <input type="password" id="password" name="password">
+        <br/>
+
+        <fieldset>
+            <legend>Pristatymo adresas</legend>
+
+            <label for="street">Gatvė</label>
+            <input type="text" id="street" name="street">
+            <br/>
+
+            <label for="house_number">Namo numeris</label>
+            <input type="text" id="house_number" name="house_number">
+            <br/>
+
+            <label for="miestas">Miestas</label>
+            <select name="miestas" id="miestas">
+                <option value="Kaunas">Kaunas</option>
+                <option value="Vilnius">Vilnius</option>
+                <option value="Klaipėda">Klaipėda</option>
+            </select>
+            <br/>
+        </fieldset>
+        <br/>
+        
+        
+        <label>Mokėjimo būdas:</label>
+        <label for="abc">abc</label>
+        <input type="radio" id="abc" name="payment_method" value="abc">
+        <label for="def">def</label>
+        <input type="radio" id="def" name="payment_method" value="def">
+        <label for="ghi">ghi</label>
+        <input type="radio" id="ghi" name="payment_method" value="ghi">
+        <br/>
+ 
+        
+        <label>Dovanėlė:</label>
+        <label for="gift1">gift1</label>
+        <input type="checkbox" id="gift1" name="gift[]" value="gift1">
+        <label for="gift2">gift2</label>
+        <input type="checkbox" id="gift2" name="gift[]" value="gift2">
+        <label for="gift3">gift3</label>
+        <input type="checkbox" id="gift3" name="gift[]" value="gift3">
+        <br/>
+
+        <label for="comments">Komentarai, pastabos</label>
+        <textarea id="comments" name="comments" disabled></textarea>
+        <br/>
+        
+        <button type="submit">Užsakyti</button>
+    </form>
+</body>
+</html>

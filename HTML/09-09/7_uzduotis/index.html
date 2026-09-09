@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 užduotis</title>
+</head>
+<body>
+    <form>
+        <label for="user_id">User id</label>
+        <input type="text" id="user_id" name="user_id">
+        <br/>
+
+        <label for="password">Slaptažodis</label>
+        <input type="password" id="password" name="password" minlength="7" minlength="12" required>
+        <br/>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" pattern="[A-Za-zĀ-ž]+" required>
+        <small>Letters only.</small>
+        <br/>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address">
+        <br/>
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="None">None</option>
+            <option value="Lithuania">Lithuania</option>
+            <option value="Latvia">Latvia</option>
+            <option value="Estonia">Estonia</option>
+        </select>
+        <br/>
+
+        <label for="zip">ZIP code</label>
+        <input type="text" id="zip" name="zip" pattern="[0-9]+" required>
+        <small>Numbers only.</small>
+        <br/>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <br/>
+
+        <label>Sex:</label>
+        <input type="radio" id="male" name="payment_method" value="abc">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="payment_method" value="def">
+        <label for="female">Female</label>
+        <br/>
+ 
+        
+        <label>Language:</label>
+        <label for="english">English</label>
+        <input type="checkbox" id="english" name="language" value="english">
+        <label for="non_english">Non English</label>
+        <input type="checkbox" id="non_english" name="language" value="non_english">
+        <br/>
+
+        <label for="about">About</label>
+        <textarea id="about" name="about" cols="50" rows="10"></textarea>
+        <br/>
+        
+        <button type="submit">Pateikti</button>
+    </form>
+</body>
+</html>
