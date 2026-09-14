@@ -1,0 +1,123 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+body {
+    background-color: beige;
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.row-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.image-container {
+    margin: 20px;
+
+    font-size: 2rem;
+}
+
+div.text-below {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.text-inside {
+    display: grid;
+    place-items: center;
+}
+
+div.text-inside p {
+    color: white;
+    z-index: 1;
+}
+
+.image-container.text-inside div.image-div,
+.image-container.text-inside p {
+    grid-area: 1 / 1;
+}
+
+div.image-container img {
+    background-color: black;
+
+    height: 200px;
+    width: 200px;
+}
+
+div.image-container div.image-div {
+    background-image: url("./img/kaunas.jpg");
+    background-color: black;
+    background-size: auto 200px;
+
+    height: 200px;
+    width: 200px;
+}
+
+#object-fit-fill img {
+    object-fit: fill;
+}
+
+#object-fit-cover img {
+    object-fit: cover;
+}
+
+#object-fit-contain img {
+    object-fit: contain;
+}
+
+#object-fit-none img {
+    object-fit: none;
+}
+
+#object-fit-scale-down img {
+    object-fit: scale-down;
+}
+
+#repeating .image-div {
+    background-repeat: repeat;
+}
+
+#multiple .image-div {
+    background-image: url("./img/kaunas.jpg"),
+                      url("./img/vilnius.jpg")
+        !important;
+
+    background-size: 50% 100%,  
+                     50% 100%;
+
+    background-position: left,
+                         right;
+
+    background-repeat: no-repeat;
+}
+
+#opacity .image-div {
+    background-size: cover;
+    opacity: 0.66;
+}
+
+#positioned .image-div {
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+
+    background-position: right bottom;
+}
+
+#flat-color .image-div {
+    background-image: none !important;
+    background-color: deepskyblue;
+}
+
+
+#image .image-div {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#gradient .image-div {
+    background-image: linear-gradient(to bottom, #003b5c, #00a9e0) !important;
+}

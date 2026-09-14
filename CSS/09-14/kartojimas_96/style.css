@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Limelight&display=swap');
+
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+nav, section, footer {
+    color:#eeeeee;
+    font-size: 4em;
+    font-family: Limelight;
+
+    align-content: center;
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 15px;
+}
+
+nav {
+    height: calc(15% - 15px);
+    margin-bottom: 15px;
+
+    background-color: rgb(83, 192, 83);
+}
+
+div.section-container {
+    border: 4px solid green;
+    border-radius: 10px;
+
+    height: 70%;
+    width: 100%;
+
+    padding: 10px;
+
+    padding: 5px solid green;
+}
+
+section {
+    height: 50%;
+    width: 50%;
+
+    background-color: rgb(248, 143, 94);
+}
+
+section:first-of-type {
+    width: 100% !important;
+
+    background-color: rgb(197, 26, 63);
+}
+
+section:nth-of-type(2) {
+    float: left;
+}
+
+section:last-of-type {
+    background-color: rgb(212, 103, 118);
+    float: right;
+}
+
+footer {
+    clear: both;
+
+    height: calc(15% - 15px);
+    margin-top: 15px;
+
+    background-color: rgb(104, 80, 241);
+}

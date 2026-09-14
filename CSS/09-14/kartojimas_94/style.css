@@ -1,0 +1,26 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+body { margin: 77px; }
+
+div.card {
+    width: 700px;
+    height: 333px;
+
+    border: 4px brown dashed;
+    border-radius: 33px;
+
+    padding: 25px
+}
+
+div.card img {
+    float: right;
+
+    height: 100%;
+    border-radius: 33px;
+
+    margin-left: 25px;
+}
+
+div.card p {
+    margin-top: 4rem;
+}

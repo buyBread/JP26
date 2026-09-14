@@ -1,0 +1,75 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1, h2 {
+    color: green;
+
+    margin-top:    25px;
+    margin-bottom: 25px;
+}
+
+p span {
+    color: darkorange;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    font-weight: bold;
+}
+
+ul ul > li::marker {
+    color: red;
+}
+
+ul ul li a {
+    color: blue;
+}
+
+ul ul li a:visited {
+    color: darkcyan;
+}
+
+ul ul li a:hover {
+    color: crimson;
+}
+
+table {
+    border-top:    4px solid black;
+    border-left:   4px solid black;
+    border-bottom: 4px solid gray;
+    border-right:  4px solid gray;
+}
+
+table tr th, table tr td {
+    border-top:    4px solid gray;
+    border-left:   4px solid gray;
+    border-bottom: 4px solid lightgray;
+    border-right:  4px solid lightgray;
+
+    padding: 2px;
+}
+
+table tr td {
+    color: magenta;
+    font-weight: bold;
+}
+
+table tr td:nth-of-type(1) {
+    color: blue;
+}
+
+form {
+    color: rgb(255, 94, 20);
+    font-weight: bold;
+}
+
+form fieldset {
+    padding: 10px;
+}
