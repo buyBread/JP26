@@ -1,0 +1,58 @@
+* { margin: 0; padding: 0; }
+
+body {
+    display: grid;
+
+    width: 100vw;
+    height: 100vh;
+
+    grid-template-rows:    1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: "one    one    two    two    two    two    csstext csstext csstext csstext four   four"
+                         "five   five   two    two    two    two    csstext csstext csstext csstext six    six"
+                         "seven  seven  eight  nine   nine   nine   csstext csstext csstext csstext ten    ten"
+                         "eleven eleven eleven eleven eleven eleven csstext csstext csstext csstext twelve twelve"
+}
+
+div {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-family: arial;
+    font-size: 3em;
+}
+
+div.text {
+    font-size: 4.5em;
+    font-weight: bold;
+}
+
+div.one    { background-color: rgb(243, 57, 172)  }
+div.two    { background-color: rgb(252, 155, 75)  }
+div.four   { background-color: rgb(29, 30, 31)    }
+div.five   { background-color: rgb(245, 62, 49)   }
+div.six    { background-color: rgb(219, 50, 115)  }
+div.seven  { background-color: rgb(182, 182, 179) }
+div.eight  { background-color: rgb(39, 218, 84)   }
+div.nine   { background-color: rgb(99, 67, 214)   }
+div.ten    { background-color: rgb(29, 112, 236)  }
+div.eleven { background-color: rgb(228, 20, 134)  }
+div.twelve { background-color: rgb(198, 228, 66)  }
+div.text   { background-color: rgb(117, 211, 167) }
+
+div.one    { grid-area: one     }
+div.two    { grid-area: two     }
+div.four   { grid-area: four    }
+div.five   { grid-area: five    }
+div.six    { grid-area: six     }
+div.seven  { grid-area: seven   }
+div.eight  { grid-area: eight   }
+div.nine   { grid-area: nine    }
+div.ten    { grid-area: ten     }
+div.eleven { grid-area: eleven  }
+div.twelve { grid-area: twelve  }
+div.text   { grid-area: csstext }
