@@ -2,13 +2,10 @@
 
 body {
     display: grid;
-
-    width: 100vw;
+    width:  100vw;
     height: 100vh;
-
     grid-template-rows:    1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
     grid-template-areas: "one    one    two    two    two    two    csstext csstext csstext csstext four   four"
                          "five   five   two    two    two    two    csstext csstext csstext csstext six    six"
                          "seven  seven  eight  nine   nine   nine   csstext csstext csstext csstext ten    ten"
@@ -17,10 +14,8 @@ body {
 
 div {
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     color: white;
     font-family: arial;
     font-size: 3em;
