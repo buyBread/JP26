@@ -1,0 +1,105 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+* { font-family: Arial; }
+
+@media (height <= 1080px) {
+    h1 { font-size: 32px !important }
+    h2 { font-size: 20px !important }
+    p  { font-size: 16px !important }
+}
+
+@media (height <= 720px) {
+    h1 { font-size: 24px !important }
+    h2 { font-size: 16px !important }
+    p  { font-size: 12px !important }
+}
+
+@media (height <= 640px) {
+    h1 { font-size: 18px !important }
+    h2 { font-size: 12px !important }
+    p  { font-size: 10px !important }
+}
+
+@media (orientation: landscape) {
+    @media (height <= 1080px) {
+        h1 { font-size: 32px !important }
+        h2 { font-size: 24px !important }
+        p  { font-size: 20px !important }
+    }
+
+    @media (height <= 720px) {
+        h1 { font-size: 24px !important }
+        h2 { font-size: 20px !important }
+        p  { font-size: 16px !important }
+    }
+
+    @media (height <= 640px) {
+        h1 { font-size: 20px !important }
+        h2 { font-size: 16px !important }
+        p  { font-size: 14px !important }
+    }
+}
+
+body {
+    margin: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+body h1 {
+    margin-bottom: 5vw;
+}
+
+.menu-grid {
+    display: grid;
+    min-height: 80vh;
+    max-height: 80vh;
+    grid-template-rows:    repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+
+.menu-item {
+    background-color: gray;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+.menu-item h2 {
+    position: relative;
+    right: calc(-60% - 5px - 10px);
+    top:   calc(  0% - 5px - 10px);
+    text-align: center;
+    width: 40%;
+    border: 5px solid black;
+    padding: 0.2em;
+}
+
+.menu-item #chicken { background-color: palevioletred; color: black; }
+.menu-item #beef    { background-color: brown;         color: white; }
+.menu-item #sushi   { background-color: bisque;        color: black; }
+
+@media (orientation: landscape) {
+    .menu-grid {
+        min-height: 70vh;
+        max-height: 70vh;
+        grid-template-rows:    repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (aspect-ratio <= 16 / 9) {
+        .menu-item:last-child {
+            grid-column: span 2;
+        }
+    }
+
+    @media (aspect-ratio > 16 / 9) {
+        .menu-grid {
+            min-height: 60vh;
+            max-height: 60vh;
+            grid-template-rows:    repeat(1, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
