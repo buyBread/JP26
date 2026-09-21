@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+@mixin button-style($color1, $color2, $text_color) {
+    border: 1px solid $color1;
+    box-shadow: inset 0 1px 0 #ffffff77;
+    background-image: linear-gradient($color2, $color1, $color2);
+
+    color:           $text_color;
+    font-weight:     900;
+    text-decoration: none;
+}
+
+body { margin: 15px; }
+
+div.product-container {
+    $element-margin: 1em;
+
+    width: 440px;
+    padding: 1em;
+
+    display:         flex;
+    flex-direction:  column;
+    justify-content: space-between;
+
+    font-family: Noto Sans;
+
+    background-color: rgb(200, 200, 200);
+
+    border: 1px solid gray;
+    border-radius: 1em;
+
+    img {
+        width: 100%;
+        height: 17.5em;
+        object-fit: cover;
+        border-radius: 0.25em;
+
+        margin-bottom: $element-margin;
+    }
+
+    h1 {
+        font-size: 2.50em;
+        font-weight: 900;
+        color: #555555;
+    }
+
+    h2 {
+        font-size: 1.33em;
+        margin-bottom: $element-margin;
+    }
+
+    ul {
+        list-style: none;
+
+        li { font-weight: bold; }
+        li::before {
+            content: "-";
+            margin-right: 0.66em;
+            margin-bottom: 0.33em;
+        }
+
+        margin-bottom: $element-margin;
+    }
+
+    div.button-container {
+        display:         flex;
+        flex-direction:  row;
+        justify-content: space-between;
+
+        a.request-test,
+        a.view-specifications {
+            text-align:    center;
+            align-content: center;
+
+            border-radius: 0.77em;
+            padding:       0.5em;
+        }
+
+        a.request-test,
+        a.request-test:visited {
+            width: 53%;
+
+            @include button-style(rgb(18, 11, 36), rgb(40, 17, 94), darkorange);
+        }
+
+        a.view-specifications,
+        a.view-specifications:visited {
+            width: 43%;
+
+            @include button-style(#6c6b74, #93969e, white);
+        }
+    }
+}

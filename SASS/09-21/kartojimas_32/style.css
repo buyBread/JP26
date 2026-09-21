@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 15px;
+}
+
+div.product-container {
+  width: 440px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Noto Sans;
+  background-color: rgb(200, 200, 200);
+  border: 1px solid gray;
+  border-radius: 1em;
+}
+div.product-container img {
+  width: 100%;
+  height: 17.5em;
+  object-fit: cover;
+  border-radius: 0.25em;
+  margin-bottom: 1em;
+}
+div.product-container h1 {
+  font-size: 2.5em;
+  font-weight: 900;
+  color: #555555;
+}
+div.product-container h2 {
+  font-size: 1.33em;
+  margin-bottom: 1em;
+}
+div.product-container ul {
+  list-style: none;
+}
+div.product-container ul li {
+  font-weight: bold;
+}
+div.product-container ul li::before {
+  content: "-";
+  margin-right: 0.66em;
+  margin-bottom: 0.33em;
+}
+div.product-container ul {
+  margin-bottom: 1em;
+}
+div.product-container div.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div.product-container div.button-container a.request-test,
+div.product-container div.button-container a.view-specifications {
+  text-align: center;
+  align-content: center;
+  border-radius: 0.77em;
+  padding: 0.5em;
+}
+div.product-container div.button-container a.request-test,
+div.product-container div.button-container a.request-test:visited {
+  width: 53%;
+  border: 1px solid rgb(18, 11, 36);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4666666667);
+  background-image: linear-gradient(rgb(40, 17, 94), rgb(18, 11, 36), rgb(40, 17, 94));
+  color: darkorange;
+  font-weight: 900;
+  text-decoration: none;
+}
+div.product-container div.button-container a.view-specifications,
+div.product-container div.button-container a.view-specifications:visited {
+  width: 43%;
+  border: 1px solid #6c6b74;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4666666667);
+  background-image: linear-gradient(#93969e, #6c6b74, #93969e);
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+}
