@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Kartojimas 32 (SASS)</title>
+</head>
+<style>
+    .card-shop-item .card-body ul {
+        list-style: none;
+        margin:  0;
+        padding: 0;
+    }
+
+    .card-shop-item .card-body ul li::before {
+        content: "-";
+        margin-right: 0.66rem;
+        margin-bottom: 0.33rem;
+    }
+
+    .card-shop-item img {
+        height: 15.5rem;
+    }
+
+    .bg-btn-sheen {
+        box-shadow: inset 0 1px 0 #ffffff77;
+    }
+
+    .bg-btn-request-color {
+        color: rgb(236, 153, 50);
+        background-image: linear-gradient(rgb(37, 23, 70), rgb(18, 11, 36), rgb(37, 23, 70));
+    }
+
+    .bg-btn-specifications-color {
+        color: white;
+        background-image: linear-gradient(#93969e, #6c6b74, #93969e); 
+    }
+
+    .card-profile .card-body ol a { font-size: 0.8rem }
+</style>
+<body>
+    <div class="container mb-5">
+        <div class="row text-center">
+            <h1>Lorem ipsum</h1>
+        </div>
+        <div class="row text-center mb-5">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, hic, eveniet ad aut molestias beatae dolorum nulla optio voluptatum autem cumque velit! Architecto obcaecati sapiente, accusamus tempore eveniet quisquam adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ducimus eaque! Fugiat vel sunt, sit iure impedit amet quod sed error totam ducimus doloribus quaerat provident atque consectetur consequuntur blanditiis?</p>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">Card 1</h1>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error neque enim magnam cupiditate suscipit. Pariatur consequatur ad necessitatibus et dicta, commodi possimus, accusantium magni libero exercitationem facilis corrupti voluptates vitae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">Card 2</h1>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error neque enim magnam cupiditate suscipit. Pariatur consequatur ad necessitatibus et dicta, commodi possimus, accusantium magni libero exercitationem facilis corrupti voluptates vitae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">Card 3</h1>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error neque enim magnam cupiditate suscipit. Pariatur consequatur ad necessitatibus et dicta, commodi possimus, accusantium magni libero exercitationem facilis corrupti voluptates vitae.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card card-shop-item p-3 bg-secondary-subtle">
+                    <img src="./img/carbon-road-bike.jpg" class="card-img-top object-fit-cover" alt="Carbon Road Bike">
+                    <div class="card-body">
+                        <h1 class="card-title fw-bold">THE APEX 2024</h1>
+                        <h4 class="card-subtitle fw-bolder mb-3">Your Ultimate Off-Road Machine!</h2>
+                        <ul class="fw-bold mb-4">
+                            <li>Custom Carbon Fiber Frame</li>
+                            <li>1x12 Shimano Drivetrain</li>
+                            <li>FOX Performance Series Suspension</li>
+                            <li>Tubeless-Ready Wheelset</li>
+                        </ul>
+                        <div class="d-flex d-flex-row justify-content-between">
+                            <button style="width: 52%" class="btn btn-primary rounded-4 bg-btn-sheen bg-btn-request-color fw-bold">REQUEST TEST RIDE</button>
+                            <button style="width: 44%" class="btn btn-secondary rounded-4 bg-btn-sheen bg-btn-specifications-color fw-bold">VIEW SPECIFICATIONS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card card-shop-item p-3 bg-secondary-subtle">
+                    <img src="./img/carbon-road-bike.jpg" class="card-img-top object-fit-cover" alt="Carbon Road Bike">
+                    <div class="card-body">
+                        <h1 class="card-title fw-bold">THE APEX 2024</h1>
+                        <h4 class="card-subtitle fw-bolder mb-3">Your Ultimate Off-Road Machine!</h2>
+                        <ul class="fw-bold mb-4">
+                            <li>Custom Carbon Fiber Frame</li>
+                            <li>1x12 Shimano Drivetrain</li>
+                            <li>FOX Performance Series Suspension</li>
+                            <li>Tubeless-Ready Wheelset</li>
+                        </ul>
+                        <div class="d-flex d-flex-row justify-content-between">
+                            <button style="width: 52%" class="btn btn-primary rounded-4 bg-btn-sheen bg-btn-request-color fw-bold">REQUEST TEST RIDE</button>
+                            <button style="width: 44%" class="btn btn-secondary rounded-4 bg-btn-sheen bg-btn-specifications-color fw-bold">VIEW SPECIFICATIONS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card card-shop-item p-3 bg-secondary-subtle">
+                    <img src="./img/carbon-road-bike.jpg" class="card-img-top object-fit-cover" alt="Carbon Road Bike">
+                    <div class="card-body">
+                        <h1 class="card-title fw-bold">THE APEX 2024</h1>
+                        <h4 class="card-subtitle fw-bolder mb-3">Your Ultimate Off-Road Machine!</h2>
+                        <ul class="fw-bold mb-4">
+                            <li>Custom Carbon Fiber Frame</li>
+                            <li>1x12 Shimano Drivetrain</li>
+                            <li>FOX Performance Series Suspension</li>
+                            <li>Tubeless-Ready Wheelset</li>
+                        </ul>
+                        <div class="d-flex d-flex-row justify-content-between">
+                            <button style="width: 52%" class="btn btn-primary rounded-4 bg-btn-sheen bg-btn-request-color fw-bold">REQUEST TEST RIDE</button>
+                            <button style="width: 44%" class="btn btn-secondary rounded-4 bg-btn-sheen bg-btn-specifications-color fw-bold">VIEW SPECIFICATIONS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes type-out {
+  0% {
+    content: "";
+  }
+  7% {
+    content: "C";
+  }
+  14% {
+    content: "CS";
+  }
+  22% {
+    content: "CSS";
+  }
+  30% {
+    content: "CSS i";
+  }
+  38% {
+    content: "CSS is";
+  }
+  45% {
+    content: "CSS is A";
+  }
+  53% {
+    content: "CSS is Aw";
+  }
+  60% {
+    content: "CSS is Awe";
+  }
+  68% {
+    content: "CSS is Awes";
+  }
+  76% {
+    content: "CSS is Aweso";
+  }
+  83% {
+    content: "CSS is Awesom";
+  }
+  91% {
+    content: "CSS is Awesome";
+  }
+  100% {
+    content: "CSS is Awesome!";
+  }
+}
+@keyframes blinking-cursor {
+  0% {
+    content: "|";
+  }
+  50% {
+    content: "";
+  }
+  100% {
+    content: "|";
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.appearing-text {
+  font-family: Fira Code;
+  color: darkcyan;
+  height: 2em;
+  margin: 2em;
+}
+.appearing-text h1::before {
+  content: "";
+  animation-name: type-out;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.appearing-text h1::after {
+  content: "";
+  animation-name: blinking-cursor;
+  animation-duration: 0.25s;
+  animation-iteration-count: infinite;
+}
+
+.appearing-menu-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30vh;
+  font-family: Fira Sans;
+  font-size: 2em;
+  font-weight: 600;
+  background-color: rgb(238, 70, 41);
+}
+.appearing-menu-links a {
+  text-align: center;
+  position: relative;
+  width: 24vw;
+  background-color: white;
+  padding: 0.5em;
+  left: -21vw;
+  border-radius: 0 3em 3em 0;
+  transition: left 0.25s ease-in, border-radius 0.25s;
+}
+.appearing-menu-links a, .appearing-menu-links a:visited {
+  color: black;
+  text-decoration: none;
+}
+.appearing-menu-links a:hover {
+  left: 0vw;
+  border-radius: 0 0.33em 0.33em 0;
+}
+
+@keyframes darken {
+  0% {
+    filter: brightness(0.25);
+  }
+  10% {
+    filter: brightness(0.25);
+  }
+  45% {
+    filter: brightness(1);
+  }
+  65% {
+    filter: brightness(1);
+  }
+  90% {
+    filter: brightness(0.25);
+  }
+  100% {
+    filter: brightness(0.25);
+  }
+}
+@keyframes sun {
+  0% {
+    left: 30vw;
+    top: 70vh;
+    opacity: 0;
+  }
+  10% {
+    left: 30vw;
+    top: 70vh;
+    opacity: 0;
+  }
+  45% {
+    left: 15vw;
+    top: 50vh;
+    opacity: 1;
+  }
+  55% {
+    left: 10vw;
+    top: 45vh;
+    opacity: 1;
+  }
+  65% {
+    left: 15vw;
+    top: 50vh;
+    opacity: 1;
+  }
+  90% {
+    left: 30vw;
+    top: 70vh;
+    opacity: 0;
+  }
+  100% {
+    left: 30vw;
+    top: 70vh;
+    opacity: 0;
+  }
+}
+@keyframes moon {
+  0% {
+    left: 45vw;
+    top: 45vh;
+    opacity: 1;
+  }
+  10% {
+    left: 40vw;
+    top: 50vh;
+    opacity: 1;
+  }
+  45% {
+    left: 30vw;
+    top: 70vh;
+    opacity: 0;
+  }
+  55% {
+    left: 30vw;
+    top: 70vh;
+    opacity: 0;
+  }
+  65% {
+    left: 30vw;
+    top: 70vh;
+    opacity: 0;
+  }
+  90% {
+    left: 40vw;
+    top: 50vh;
+    opacity: 1;
+  }
+  100% {
+    left: 45vw;
+    top: 45vh;
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.sun-moon {
+  height: 70vh;
+  width: 60vw;
+}
+.sun-moon img:nth-of-type(1) {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: 8s linear 0s infinite darken;
+  z-index: -1;
+}
+.sun-moon img:nth-of-type(2),
+.sun-moon img:nth-of-type(3) {
+  position: absolute;
+}
+.sun-moon img:nth-of-type(2) {
+  height: 10%;
+}
+.sun-moon img:nth-of-type(3) {
+  height: 8.5%;
+}
+.sun-moon img:nth-of-type(2) {
+  animation: 4s linear 0s infinite spin, 8s linear 0s infinite sun;
+}
+.sun-moon img:nth-of-type(3) {
+  animation: 4s linear 0s infinite spin, 8s linear 0s infinite moon;
+}/*# sourceMappingURL=style.css.map */
