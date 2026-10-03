@@ -1,0 +1,1 @@
+sass --watch --no-source-map ./stylesheets/main.scss ./stylesheets/main.css

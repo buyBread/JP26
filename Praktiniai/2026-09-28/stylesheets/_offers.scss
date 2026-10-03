@@ -1,0 +1,59 @@
+.offers {
+    position: relative;
+
+    &__slide {
+        display: none;
+        gap: 1rem;
+
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: center;
+        gap: .75rem;
+        margin-top: 1.5rem;
+        
+        label { cursor: pointer; }
+    }
+
+    @for $i from 1 through 3 {
+        #offers-#{$i}:checked ~ .offers__slides .offers__slide:nth-child(#{$i}) {
+            display: grid;
+        }
+
+        #offers-#{$i}:checked ~ .offers__controls label[for="offers-#{$i}"] {
+            background-color: $primary;
+            color: white;
+        }
+
+        #offers-#{$i}:focus-visible ~ .offers__controls label[for="offers-#{$i}"] {
+            outline: 3px solid $dark;
+            outline-offset: 3px;
+        }
+    }
+}
+
+.offer {
+    transition: box-shadow .2s;
+
+    &:hover {
+        box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .33);
+    }
+
+    img { height: 15.5rem; }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__price {
+        margin-top: auto;
+        align-self: flex-start;
+
+        font-weight: bold;
+    }
+}

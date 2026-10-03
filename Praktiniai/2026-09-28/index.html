@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylesheets/main.css" rel="stylesheet">
+    <title>Kelionės Agentūra | Pradžia</title>
+</head>
+<body>
+    <header class="header mb-5"><nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container gap-2">
+            <span class="navbar-brand"><img class="header__logo" src="./assets/logo.svg" alt="Kelionės Agentūra"></span>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-md-auto">
+                    <li class="nav-item"><a class="nav-link" href="./login.html">Log in</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./form.html">Užklausa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#offers">Pasiūlymai</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#recommendations">Patarimai</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#autonuoma">Autonuoma</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#blog">Žurnalas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav></header>
+
+    <main class="container-lg">
+        <section class="intro page-section">
+            <div class="row g-4 align-items-center">
+                <div class="col-12 col-lg-5">
+                    <h1 class="fw-bold mb-3">Kur keliausim šį kartą?</h1>
+                    <p class="lead">Toliau nuo kasdienybės, arčiau naujų vietų.</p>
+                    <p>Išsirinkite kelionę, pasiskaitykite patarimus ir parašykite mums. Padėsime susiplanuoti tiek savaitgalį, tiek ilgesnes atostogas.</p>
+                    <a class="btn btn-primary fw-bold" href="./form.html">Planuoti kelionę</a>
+                </div>
+                
+                <div class="col-12 col-lg-7">
+                    <video class="intro__video" autoplay preload="metadata" poster="./assets/video/beach.jpg">
+                        <source src="./assets/video/beach.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section" id="offers">
+            <h2 class="text-center fw-bold">Kelionių pasiūlymai</h2>
+            <div class="offers">
+                <input class="visually-hidden" type="radio" name="offers" id="offers-1" checked>
+                <input class="visually-hidden" type="radio" name="offers" id="offers-2">
+                <input class="visually-hidden" type="radio" name="offers" id="offers-3">
+                <div class="offers__slides">
+                    <div class="offers__slide">
+                        <article class="card bg-secondary-subtle offer">
+                            <img src="./assets/offers/madrid.jpg" class="card-img-top object-fit-cover" alt="Madridas, Ispanija">
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold">Madridas</h3>
+                                <h4 class="card-subtitle h6 fw-bolder mb-3">Ispanija</h4>
+                                <p class="card-text mb-3">Keturios dienos pasivaikščiojimams po miestą, muziejams ir tapas. Skrydis ir viešbutis įskaičiuoti.</p>
+                                <a class="offer__price btn btn-primary rounded-2" href="./form.html">Užsisakyti – &euro;399</a>
+                            </div>
+                        </article>
+                        <article class="card bg-secondary-subtle offer">
+                            <img src="./assets/offers/paris.jpg" class="card-img-top object-fit-cover" alt="Paryžius, Prancūzija">
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold">Paryžius</h3>
+                                <h4 class="card-subtitle h6 fw-bolder mb-3">Prancūzija</h4>
+                                <p class="card-text mb-3">Savaitgalis prie Senos, kava mažose kavinėse ir pažįstami vaizdai, kuriuos norisi pamatyti gyvai.</p>
+                                <a class="offer__price btn btn-primary rounded-2" href="./form.html">Užsisakyti – &euro;459</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="offers__slide">
+                        <article class="card bg-secondary-subtle offer">
+                            <img src="./assets/offers/rome.jpg" class="card-img-top object-fit-cover" alt="Roma, Italija">
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold">Roma</h3>
+                                <h4 class="card-subtitle h6 fw-bolder mb-3">Italija</h4>
+                                <p class="card-text mb-3">Penkios dienos senamiesčio gatvėse. Laiko užteks ir Koliziejui, ir ilgai vakarienei.</p>
+                                <a class="offer__price btn btn-primary rounded-2" href="./form.html">Užsisakyti – &euro;429</a>
+                            </div>
+                        </article>
+                        <article class="card bg-secondary-subtle offer">
+                            <img src="./assets/offers/hong_kong.jpg" class="card-img-top object-fit-cover" alt="Honkongas, Kinija">
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold">Honkongas</h3>
+                                <h4 class="card-subtitle h6 fw-bolder mb-3">Kinija</h4>
+                                <p class="card-text mb-3">Septynios dienos tarp dangoraižių, turgų ir kalnų. Viešbutis netoli viešojo transporto.</p>
+                                <a class="offer__price btn btn-primary rounded-2" href="./form.html">Užsisakyti – &euro;899</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="offers__slide">
+                        <article class="card bg-secondary-subtle offer">
+                            <img src="./assets/offers/tokyo.jpg" class="card-img-top object-fit-cover" alt="Tokijas, Japonija">
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold">Tokijas</h3>
+                                <h4 class="card-subtitle h6 fw-bolder mb-3">Japonija</h4>
+                                <p class="card-text mb-3">Dešimt dienų pažinti skirtingus miesto rajonus, paragauti vietinio maisto ir truputį pasiklysti.</p>
+                                <a class="offer__price btn btn-primary rounded-2" href="./form.html">Užsisakyti – &euro;1199</a>
+                            </div>
+                        </article>
+                        <article class="card bg-secondary-subtle offer">
+                            <img src="./assets/offers/riga.jpg" class="card-img-top object-fit-cover" alt="Ryga, Latvija">
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold">Ryga</h3>
+                                <h4 class="card-subtitle h6 fw-bolder mb-3">Latvija</h4>
+                                <p class="card-text mb-3">Trumpa kelionė autobusu į kaimynų sostinę. Dvi nakvynės ir laisvas laikas senamiestyje.</p>
+                                <a class="offer__price btn btn-primary rounded-2" href="./form.html">Užsisakyti – &euro;149</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="offers__controls">
+                    <label class="btn btn-outline-primary" for="offers-1">1</label>
+                    <label class="btn btn-outline-primary" for="offers-2">2</label>
+                    <label class="btn btn-outline-primary" for="offers-3">3</label>
+                </div>
+            </div>
+        </section>
+
+        <section id="recommendations" class="page-section">
+            <h2 class="fw-bold">Patarimai keliaujantiems</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <h3 class="h5">Prieš išvykstant</h3>
+                    <ol class="ps-4">
+                        <li class="mb-2">Patikrinkite dokumentų galiojimo datą.</li>
+                        <li class="mb-2">Išsisaugokite bilietus ir viešbučio adresą telefone.</li>
+                        <li class="mb-2">Peržiūrėkite bagažo dydžio ir svorio ribas.</li>
+                        <li>Palikite šiek tiek laisvo laiko – nebūtina suplanuoti kiekvienos minutės.</li>
+                    </ol>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3 class="h5">Ką įsidėti?</h3>
+                    <ul class="ps-4">
+                        <li class="mb-2">Patogius batus ir lengvą striukę.</li>
+                        <li class="mb-2">Telefono įkroviklį ir išorinę bateriją.</li>
+                        <li class="mb-2">Daugkartinę vandens gertuvę.</li>
+                        <li>Dokumentų kopijas ir būtinus asmeninius daiktus.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="autonuoma" class="page-section rentals">
+            <h2 class="fw-bold">Autonuomos pasiūlymai</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover border text-center">
+                    <caption>Automobilių nuomos kainos eurais</caption>
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Automobilis</th>
+                            <th scope="col">Nuotrauka</th>
+                            <th scope="col">1 diena</th>
+                            <th scope="col">3 dienos</th>
+                            <th scope="col">7 dienos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Volkswagen Golf</th>
+                            <td><img class="rentals__photo" src="./assets/cars/golf.jpg" alt="Volkswagen Golf" loading="lazy"></td>
+                            <td>35 &euro;</td><td>95 &euro;</td><td>210 &euro;</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ford Focus</th>
+                            <td><img class="rentals__photo" src="./assets/cars/focus.jpg" alt="Ford Focus" loading="lazy"></td>
+                            <td>30 &euro;</td><td>80 &euro;</td><td>180 &euro;</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Toyota Corolla</th>
+                            <td><img class="rentals__photo" src="./assets/cars/corolla.jpg" alt="Toyota Corolla" loading="lazy"></td>
+                            <td>40 &euro;</td><td>110 &euro;</td><td>240 &euro;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="blog" class="page-section journal">
+            <h2 class="fw-bold">Kelionių žurnalas</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <article>
+                        <h3 class="fw-bold mb-3">Madridas be skubėjimo</h3>
+                        <h4>Pirmas pasivaikščiojimas</h4>
+                        <p>Pradėti galima nuo centro, o toliau tiesiog rinktis patikusią gatvę. <strong>Ne viską reikia pamatyti per vieną dieną.</strong> Daugiau idėjų rasite <a href="https://www.esmadrid.com/en">Madrido turizmo puslapyje</a>.</p>
+                        <h4>Laikas sustoti</h4>
+                        <p>Po muziejų norisi paprasto dalyko – prisėsti kavinėje ir stebėti miestą. <em>Mažiau punktų sąraše, daugiau laiko vietoje.</em></p>
+                        <blockquote>Geriausia kelionės dalis kartais net nebūna plane.</blockquote>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6">
+                    <article>
+                        <h3 class="fw-bold mb-3">Savaitgalis Paryžiuje</h3>
+                        <h4>Pasivaikščiojimas prie Senos</h4>
+                        <p>Trumpai kelionei užtenka kelių pasirinktų vietų. Pasivaikščiojimas palei upę leidžia pamatyti miestą savo tempu. Maršrutų idėjų turi <a href="https://parisjetaime.com/eng/">Paryžiaus turizmo puslapis</a>.</p>
+                        <h4>Vienas muziejus, ne penki</h4>
+                        <p>Pasirinkite tai, kas jums įdomu, ir skirkite tam daugiau laiko. <strong>Kelionė nėra varžybos.</strong> Likusią popietę galima praleisti parke su knyga.</p>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6">
+                    <article>
+                        <h3 class="fw-bold mb-3">Romos gatvėmis</h3>
+                        <h4>Senamiestis pėsčiomis</h4>
+                        <p>Romoje daug ką įdomu atrasti vaikštant, todėl <em>patogūs batai</em> praverčia labiau nei dar vienas drabužių komplektas. Vietų aprašymus rasite <a href="https://www.turismoroma.it/en">oficialiame Romos turizmo puslapyje</a>.</p>
+                        <h4>Vakarienė be plano</h4>
+                        <p>Vakarui palikite laiko pasėdėti mažoje aikštėje. Kartais geriausiai įsimena paprasta vakarienė ir pokalbis, o ne dar viena skubiai nufotografuota vieta.</p>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6">
+                    <article>
+                        <h3 class="fw-bold mb-3">Pirmas kartas Tokijuje</h3>
+                        <h4>Po vieną rajoną</h4>
+                        <p>Didelį miestą lengviau pažinti dalimis. Vienai dienai išsirinkite rajoną, o ne dešimt vietų skirtinguose galuose. Pradžiai tiks <a href="https://www.gotokyo.org/en/">GO TOKYO gidas</a>.</p>
+                        <h4>Palikite vietos netikėtumams</h4>
+                        <p>Maža užkandinė ar tyli šalutinė gatvė gali patikti labiau už garsiausią lankytiną objektą. <strong>Leiskite sau nukrypti nuo maršruto</strong> ir atrasti ką nors savo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container-fluid mt-5 bg-dark text-white p-4">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-lg-6 d-flex align-items-center">
+                    <address>
+                        Jeigu turite klausimų, <a href="mailto:nobody@example.com" class="text-info">rašykite</a>!<br>
+                        <br>
+                        Taipogi galite apsilankyti:<br>
+                        Laisvės al. 33, Kaunas, 44311<br>
+                        Tel. <a href="tel:+37060063439" class="text-info">+370 600 63439</a>
+                    </address>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2294.341386223894!2d23.91599587734469!3d54.896930072779426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e72276dd555557%3A0x2bf3519be19be30c!2sKauno%20Informacini%C5%B3%20technologij%C5%B3%20mokykla!5e0!3m2!1slt!2slt!4v1790581263910!5m2!1slt!2slt" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+            <div class="text-center">&copy; 2026 Kelionės Agentūra</div>
+        </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

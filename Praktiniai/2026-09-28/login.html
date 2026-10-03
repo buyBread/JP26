@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylesheets/main.css" rel="stylesheet">
+    <title>Prisijungimas | Kelionės Agentūra</title>
+</head>
+<body>
+    <header class="header mb-5"><nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container gap-2">
+            <a class="navbar-brand" href="./index.html"><img class="header__logo" src="./assets/logo.svg" alt="Kelionės Agentūra"></a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-md-auto">
+                    <li class="nav-item"><a class="nav-link" href="./form.html">Užklausa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#offers">Pasiūlymai</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#recommendations">Patarimai</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#autonuoma">Autonuoma</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#blog">Žurnalas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav></header>
+
+    <main class="container-lg mb-2">
+        <div class="login-form">
+            <h1 class="text-center fw-bold mb-4">Prisijungimas</h1>
+            <form class="bg-secondary-subtle p-4 rounded" action="./blog.html" method="get">
+                <div class="mb-3">
+                    <label class="form-label" for="login-name">Vardas</label>
+                    <input class="form-control" type="text" id="login-name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="login-email">El. paštas</label>
+                    <input class="form-control" type="email" id="login-email" required>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label" for="password">Slaptažodis</label>
+                    <input class="form-control" type="password" id="password" required>
+                </div>
+
+                <button class="btn btn-primary fw-bold w-100" type="submit">Prisijungti</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer container-fluid mt-5 bg-dark text-white p-4">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-lg-6 d-flex align-items-center">
+                    <address>
+                        Jeigu turite klausimų, <a href="mailto:nobody@example.com" class="text-info">rašykite</a>!<br>
+                        <br>
+                        Taipogi galite apsilankyti:<br>
+                        Laisvės al. 33, Kaunas, 44311<br>
+                        Tel. <a href="tel:+37060063439" class="text-info">+370 600 63439</a>
+                    </address>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2294.341386223894!2d23.91599587734469!3d54.896930072779426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e72276dd555557%3A0x2bf3519be19be30c!2sKauno%20Informacini%C5%B3%20technologij%C5%B3%20mokykla!5e0!3m2!1slt!2slt!4v1790581263910!5m2!1slt!2slt" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+            <div class="text-center">&copy; 2026 Kelionės Agentūra</div>
+        </div>
+    </footer>
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

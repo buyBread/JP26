@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylesheets/main.css" rel="stylesheet">
+    <title>Kelionės Agentūra | Užklausa</title>
+</head>
+<body>
+    <header class="header mb-5"><nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container gap-2">
+            <a class="navbar-brand" href="./index.html"><img class="header__logo" src="./assets/logo.svg" alt="Kelionės Agentūra"></a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-md-auto">
+                    <li class="nav-item"><a class="nav-link" href="./login.html">Log in</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#offers">Pasiūlymai</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#recommendations">Patarimai</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#autonuoma">Autonuoma</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#blog">Žurnalas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav></header>
+
+    <main class="container-lg">
+        <h1 class="text-center fw-bold mb-4">Kelionės užklausa</h1>
+
+        <form class="request-form bg-secondary-subtle p-3 p-md-4 rounded" action="./index.html" method="get">
+            <fieldset>
+                <legend>Kontaktai</legend>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <label class="form-label" for="name">Vardas</label>
+                        <input class="form-control" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label class="form-label" for="email">El. paštas</label>
+                        <input class="form-control" type="email" id="email" name="email" required>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label" for="phone">Telefono numeris</label>
+                        <input class="form-control" type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Kelionė</legend>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <label class="form-label" for="destination">Kelionės kryptis</label>
+                        <select class="form-select" id="destination" name="destination" required>
+                            <option value="" selected disabled>Pasirinkite kryptį</option>
+                            <optgroup label="Europa">
+                                <option value="madrid">Madridas</option>
+                                <option value="paris">Paryžius</option>
+                                <option value="rome">Roma</option>
+                                <option value="riga">Ryga</option>
+                            </optgroup>
+                            <optgroup label="Azija">
+                                <option value="tokyo">Tokijas</option>
+                                <option value="hong-kong">Honkongas</option>
+                                <option value="seoul">Seulas</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <label class="form-label" for="duration">Kelionės trukmė</label>
+                        <select class="form-select" id="duration" name="duration" required>
+                            <option value="" selected disabled>Pasirinkite trukmę</option>
+                            <optgroup label="Trumpos kelionės">
+                                <option value="2">2 dienos</option>
+                                <option value="3">3 dienos</option>
+                                <option value="4">4 dienos</option>
+                            </optgroup>
+                            <optgroup label="Ilgesnės atostogos">
+                                <option value="7">7 dienos</option>
+                                <option value="10">10 dienų</option>
+                                <option value="14">14 dienų</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <label class="form-label" for="departure">Išvykimo data</label>
+                        <input class="form-control" type="date" id="departure" name="departure" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Papildomos paslaugos</legend>
+                <div class="row g-2">
+                    <div class="col-12 col-sm-6"><div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="car" name="extras" value="car">
+                        <label class="form-check-label" for="car">Automobilio nuoma</label>
+                    </div></div>
+
+                    <div class="col-12 col-sm-6"><div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="guide" name="extras" value="guide">
+                        <label class="form-check-label" for="guide">Gido paslaugos</label>
+                    </div></div>
+
+                    <div class="col-12 col-sm-6"><div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="transfer" name="extras" value="transfer">
+                        <label class="form-check-label" for="transfer">Pervežimas iš oro uosto</label>
+                    </div></div>
+
+                    <div class="col-12 col-sm-6"><div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="breakfast" name="extras" value="breakfast">
+                        <label class="form-check-label" for="breakfast">Pusryčiai viešbutyje</label>
+                    </div></div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Kaip keliausite?</legend>
+                <div class="row g-2">
+                    <div class="col-12 col-sm-6"><div class="form-check">
+                        <input class="form-check-input" type="radio" id="solo" name="company" value="solo" required>
+                        <label class="form-check-label" for="solo">Vienas / viena</label>
+                    </div></div>
+
+                    <div class="col-12 col-sm-6"><div class="form-check">
+                        <input class="form-check-input" type="radio" id="couple" name="company" value="couple" required>
+                        <label class="form-check-label" for="couple">Dviese</label>
+                    </div></div>
+
+                    <div class="col-12 col-sm-6"><div class="form-check">
+                        <input class="form-check-input" type="radio" id="family" name="company" value="family" required>
+                        <label class="form-check-label" for="family">Su šeima</label>
+                    </div></div>
+
+                    <div class="col-12 col-sm-6"><div class="form-check">
+                        <input class="form-check-input" type="radio" id="friends" name="company" value="friends" required>
+                        <label class="form-check-label" for="friends">Su draugais</label>
+                    </div></div>
+                </div>
+            </fieldset>
+
+            <div class="mt-4">
+                <label class="form-label" for="message">Kiti pageidavimai</label>
+                <textarea class="form-control" id="message" name="message" placeholder="Ką dar turėtume žinoti?"></textarea>
+            </div>
+
+            <button class="btn btn-primary fw-bold mt-4" type="submit">Siųsti užklausą</button>
+        </form>
+    </main>
+
+    <footer class="footer container-fluid mt-5 bg-dark text-white p-4">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-lg-6 d-flex align-items-center">
+                    <address>
+                        Jeigu turite klausimų, <a href="mailto:nobody@example.com" class="text-info">rašykite</a>!<br>
+                        <br>
+                        Taipogi galite apsilankyti:<br>
+                        Laisvės al. 33, Kaunas, 44311<br>
+                        Tel. <a href="tel:+37060063439" class="text-info">+370 600 63439</a>
+                    </address>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2294.341386223894!2d23.91599587734469!3d54.896930072779426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e72276dd555557%3A0x2bf3519be19be30c!2sKauno%20Informacini%C5%B3%20technologij%C5%B3%20mokykla!5e0!3m2!1slt!2slt!4v1790581263910!5m2!1slt!2slt" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+            <div class="text-center">&copy; 2026 Kelionės Agentūra</div>
+        </div>
+    </footer>
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
