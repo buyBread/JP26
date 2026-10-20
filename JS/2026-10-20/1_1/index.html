@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.1</title>
+</head>
+<script>
+    const range = (n) => [ ...Array(n).keys() ];
+    const randint = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+    // 1
+    function generate_num_array(n_num = 30, min_num = 5, max_num = 25) {
+        return range(n_num).map(() => randint(min_num, max_num));
+    }
+
+    // 2.b
+    function largest_num_in_array_with_index(array) {
+        const largest = Math.max(...array);
+
+        let ret = {};
+
+        for (const [i, num] of array.entries()) {
+            if (num !== largest)
+                continue
+
+            ret[i] = num;
+        }
+
+        return ret;
+    }
+
+    let array = generate_num_array();
+
+    console.log("1 -- " + array)
+
+    console.log("2.a -- " + array.filter((num) => num > 10).length);
+    console.log("2.b -- " + JSON.stringify(largest_num_in_array_with_index(array)));
+    console.log("2.c -- " + array.reduce((sum, num, i) => i % 2 == 0 ? sum + num : sum, 0));
+    console.log("2.d -- " + array.map((num, i) => num - i));
+    
+    // 2.e
+    for (let i = 0; i < 10; i++)
+        array.push(randint(5, 25));
+
+    console.log("2.e --" + array)
+
+    // 2.f
+    let array_of_even_indices = array.filter((_, i) => i % 2 == 0);
+    let array_of_odd_indices  = array.filter((_, i) => i % 2 != 0);
+
+    console.log("2.f -- (even indices) " + array_of_even_indices)
+    console.log("2.f -- (odd indices) " + array_of_odd_indices)
+
+    console.log("2.g -- " + array.map((num, i) => i % 2 == 0 ? num > 15 ? 0 : num : num));
+    console.log("2.h -- " + array.findIndex(n => n > 10));
+</script>
+<body>
+    <h1>zzz</h1>
+</body>
+</html>

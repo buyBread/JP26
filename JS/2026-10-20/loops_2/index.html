@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops 2</title>
+</head>
+<script>
+    // 1
+    let car_brands = [ "audi", "bmw", "mercedes-benz", "volkswagen", "toyota", "honda", "ford", "opel", "volvo", "nissan", "mazda", "hyundai", "kia", "skoda", "renault", "peugeot", "citroen", "fiat", "seat", "porsche", "tesla", "lexus", "subaru", "mitsubishi", "suzuki" ];
+
+    if (car_brands.findIndex((s) => s == "bentley") == -1)
+        car_brands.push("bentley");
+
+    // 2
+    let groceries = [ "cheese", "milk", "soda", "potato chips", "water", "soda", "cake", "cheese", "soda", "candy", "soda", "sugar", "salt", "sugar", "water" ];
+    let groceries_unique = []
+
+    for (const [i, s] of groceries.entries()) {
+        if (groceries_unique.findIndex((str) => str == s) != -1)
+            continue;
+
+        groceries_unique.push(s);
+    }
+
+    console.log("2 -- " + groceries);
+    console.log("2 -- " + groceries_unique);
+
+    // 3
+    let fruits = [ "apple", "orange", "banana", "lemon", "lime", "apple", "orange", "apple", "orange", "apple", "banana", "banana", "banana", "apple", "banana" ];
+    let fruits_unique = []
+
+    for (const [i, s] of fruits.entries()) {
+        if (fruits_unique.includes(s))
+            continue;
+
+        fruits_unique.push(s);
+    }
+
+    console.log("3 -- " + fruits);
+    console.log("3 -- " + fruits_unique);
+
+    // 4
+    const choice = (array) => array[Math.floor(Math.random() * array.length)];
+    const range = (n) => [ ...Array(n).keys() ];
+    const randint = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+    function generate_num_array(n_num = 30, min_num = 5, max_num = 25) {
+        return range(n_num).map(() => randint(min_num, max_num));
+    }
+
+    let num_array = generate_num_array();
+
+    console.log("4 (initial) -- " + num_array);
+
+    for (let i of num_array.keys()) {
+        if (i % 2 == 0) {
+            // 4.a
+            num_array[i] = choice(["Vardenis", "Benas", "Aidas", "Jonas", "Saulius", "Vytautuas", "Mindaugas", "Morta"])
+            // 4.b
+            num_array[i] = num_array[i].toUpperCase();
+        }
+    }
+
+    console.log("4 (after) -- " + num_array);
+</script>
+<body>
+    <h1>zzz</h1>
+</body>
+</html>

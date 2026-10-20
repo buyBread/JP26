@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.2</title>
+</head>
+<script>
+    const range = (n) => [ ...Array(n).keys() ];
+    const choice = (array) => array[Math.floor(Math.random() * array.length)];
+    const randint = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+    const ABCD = [ "A", "B", "C", "D" ];
+
+    let array = range(200).map(() => choice(ABCD));
+    
+    console.log("1 -- " + array);
+    console.log("2 -- " + array.sort());
+
+    // 3
+    function unique_random_num_array(length = 100, n_min = 100, n_max = 999) {
+        ret = range(length);
+
+        generated = [];
+
+        for (const [i, _] of ret.entries()) {
+            random = randint(n_min, n_max);
+
+            if (generated.findIndex((n) => n == random) != -1)
+                continue;
+
+            generated.push(random);
+
+            ret[i] = random;
+        }
+
+        return ret;
+    }
+
+    let unique_array1 = unique_random_num_array();
+    let unique_array2 = unique_random_num_array();
+
+    console.log("3.1 -- " + unique_array1)
+    console.log("3.2 -- " + unique_array2)
+
+    // 4
+    function random_num_array_from_other_array_values(other, length = 100, n_min = 100, n_max = 999) {
+        ret = range(length);
+
+        for (const [i, _] of ret.entries()) {
+            random = randint(n_min, n_max);
+
+            if (other.findIndex((n) => n == random) == -1)
+                continue;
+
+            ret[i] = random;
+        }
+
+        return ret;
+    }
+
+    let array_from_other_array = random_num_array_from_other_array_values(unique_array1);
+
+    console.log("4 -- " + array_from_other_array);
+
+    // 5
+    function random_num_array_from_other_array_values_multiple(o1, o2, o3, length = 100, n_min = 100, n_max = 999) {
+        ret = range(length);
+
+        for (const [i, _] of ret.entries()) {
+            random = randint(n_min, n_max);
+
+            if (o1.findIndex((n) => n == random) == -1 &&
+                o2.findIndex((n) => n == random) == -1 &&
+                o3.findIndex((n) => n == random) == -1)
+
+                continue;
+
+            ret[i] = random;
+        }
+
+        return ret;
+    }
+
+    let array_from_other_arrays = random_num_array_from_other_array_values_multiple(unique_array1, unique_array2, array_from_other_array);
+
+    console.log("5 -- " + array_from_other_arrays);
+
+    // 6
+    function random_num_array_by_rule(length = 10, n_initial_min = 5, n_initial_max = 25) {
+        ret = range(length);
+
+        for (const [i, _] of ret.entries()) {
+            if (i == 0 || i == 1) {
+                ret[i] = randint(n_initial_min, n_initial_max);
+
+                continue;
+            }
+
+            ret[i] = ret[i - 2] + ret[i - 1];
+        }
+
+        return ret;
+    }
+
+    console.log("6 -- " + random_num_array_by_rule());
+</script>
+<body>
+    <h1>zzz</h1>
+</body>
+</html>

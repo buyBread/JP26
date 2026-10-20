@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<script>
+    function push_to_array(array, item) { // 1
+        array.push(item);
+
+        return array;
+    }
+
+    function sum_num_array(array, initial = 0) { // 2
+        return array.reduce((res, n) => res + n, initial);
+    }
+
+    function sort_array(array) { // 3
+        return array.sort();
+    }
+
+    function slice_array(array, start, end) { // 4
+        return array.slice(start, end);
+    }
+
+    function join_arrays(a1, a2) { // 5
+        return a1.concat(a2);
+    }
+
+    function filter_num_array_by_gt(array, above = 10) { // 6
+        return array.filter((num) => num > above);
+    }
+
+    function first_gt_in_num_array(array, above = 10) { // 7
+        return array.find((num) => num > above);
+    }
+
+    function multiply_num_array(array, by = 2) { // 8
+        return array.map((num) => num * by)
+    }
+
+    console.log("1. " + push_to_array([ 1, 2, 3 ], 4));
+    console.log("2. " + sum_num_array([ 2, 4 ,6 ]));
+    console.log("3. " + sort_array([ 8, 3, 1, 7, 4 ]));
+    console.log("4. " + slice_array([ 1, 2, 3, 4, 5, 6, 7, 8, 9 ], 2, 8));
+    console.log("5. " + join_arrays([ 1, 2 ], [ 3, 4 ]))
+    console.log("6. " + filter_num_array_by_gt([ 24, 11, 7, 1, 777 ]));
+    console.log("7. " + first_gt_in_num_array([ 24, 11, 7, 1, 777 ]));
+    console.log("8. " + multiply_num_array([ 1, 2, 3 ]));
+</script>
+<body><h1>zzz</h1></body>
+</html>

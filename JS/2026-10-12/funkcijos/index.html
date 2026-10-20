@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkcijos</title>
+</head>
+<script>
+    // 1.
+    function temperature_status(cur_temp) {
+        if (typeof cur_temp != "number") {
+            console.error("Pateikta temperatūra nėra skačius.");
+
+            return "Neįprasta reikšmė.";
+        }
+
+        if (cur_temp > 60 || cur_temp < -50)
+            return "Neįprasta reikšmė.";
+
+        if (cur_temp > 25)
+            return "Karšta! Nepamiršk vandens.";
+        else if (cur_temp >= 16)
+            return "Puikus oras pasivaikščiojimui!";
+        else if (cur_temp >= 0)
+            return "Vėsu. Pravers striukė.";
+        else
+            return "Šalta! Apsirenk šiltai";
+    }
+
+    console.log(temperature_status(27));
+    console.log(temperature_status(18));
+    console.log(temperature_status(7));
+    console.log(temperature_status(-12));
+    console.log(temperature_status(999));
+    console.log(temperature_status(-999));
+
+    // 2.
+    function check_password(password) {
+        if (password.length < 8)
+            return "Slaptažodis per trumpas.";
+
+        if (!(password.includes("0") || password.includes("1") ||
+              password.includes("2") || password.includes("3") || 
+              password.includes("4") || password.includes("5") || 
+              password.includes("6") || password.includes("7") || 
+              password.includes("8") || password.includes("0")))
+
+            return "Slaptažodis per silpnas.";
+
+        return "Slaptažodis tinkamas.";
+    }
+
+    console.log(check_password("trumpas"));
+    console.log(check_password("ilgasbeskaiciaus"));
+    console.log(check_password("ilgasslaptzodissu123"));
+
+    // 3.
+    function arithmetic(expression) {
+        let answer = null;
+
+        if (expression.includes("+")) {
+            const numbers = expression.split("+");
+            
+            answer = Number(numbers[0]) + Number(numbers[1]);
+        } else if (expression.includes("-")) {
+            const numbers = expression.split("-");
+
+            answer = Number(numbers[0]) - Number(numbers[1]);
+        } else if (expression.includes("*")) {
+            const numbers = expression.split("*");
+            
+            answer = Number(numbers[0]) * Number(numbers[1]);
+        } else if (expression.includes("/")) {
+            const numbers = expression.split("/");
+            
+            if (numbers[1] == "0")
+                return "Division by zero is invalid.";
+
+            answer = Number(numbers[0]) / Number(numbers[1]);
+        }
+
+        if (answer != null)
+            answer = Number(answer.toFixed(2));
+
+        return answer;
+    }
+
+    const expression = prompt("Enter an expression.")
+    const answer = arithmetic(expression);
+
+    if (answer == null)
+        alert("This operation is not supported.")
+    else {
+        if (typeof answer == "number")
+            alert(`The answer is: ${answer}.`);
+        else
+            alert(answer);
+    }
+
+    // 4.
+    function guess_the_number(guess, difficulty) {
+        let max;
+
+        switch (difficulty) {
+            case "lengvas":   max =  10; break;
+            case "vidutinis": max =  50; break;
+            case "sunkus":    max = 100; break;
+        }
+
+        if (guess > max || guess < 1)
+            return `Įvesk skaičių nuo 1 iki ${max}`;
+
+        const random_num = Math.max(Math.round(Math.random() * max), 1);
+
+        if (guess === random_num)
+            return "Atspėjai!";
+        else if (guess > random_num)
+            return "Per didelis!";
+        else
+            return "Per mažas!";
+    }
+
+    const difficulty = prompt("Atspėk skaičiu žaidimas. Pasirinkite sudėtingumo lygį.\n(lengvas: 1-10, vidutinis: 1-50; sunkus: 1-100)");
+
+    if (!(difficulty == "lengvas"   ||
+          difficulty == "vidutinis" ||
+          difficulty == "sunkus"))
+
+        alert("Netinkamas sudėtingumo lygis! Gali būti tik: \"lengvas\", \"vidutinis\", \"sunkus\".");
+    else {
+        const guess = prompt("Spėjimas...")
+
+        alert(guess_the_number(guess, difficulty));
+    }
+
+    // 5.
+    function days_till_birthday(birthday) {
+        let in_date = birthday.includes("/") ?
+            birthday.split("/") :
+            birthday.includes("-") ?
+                birthday.split("-") : "Netinkamas datos formatas! Tinka tik MM/DD arba MM-DD.";
+
+        if (typeof in_date == "string")
+            return in_date;
+        else if (Number(in_date[0] > 12) || Number(in_date[0] < 1) ||
+                 Number(in_date[1] > 31) || Number(in_date[1] < 1))
+
+            return "Tokia data neegzistuoja...";
+
+        const cur_date = new Date();
+
+        in_date = new Date(`${cur_date.getFullYear()}-${Number(in_date[0])}-${Number(in_date[1])}`);
+
+        if (cur_date > in_date)
+            in_date.setFullYear(in_date.getFullYear() + 1);
+
+        return Math.round((in_date - cur_date) / 86400000);
+    }
+
+    const birthday = prompt("Įveskite savo gimtadienio mėnesį ir dieną (pvz.: 10-19).");
+    const days_left = days_till_birthday(birthday);
+
+    if (typeof days_left == "string")
+        alert(days_left);
+    else {
+        if (days_left == 0)
+            alert("Su gimtadieniu!");
+        else
+            alert(`Iki tavo gimtadienio liko ${days_left} ${days_left == 1 ? 'diena' : 'dienų'}!`);
+    }
+
+    // 6.
+    function is_late(event_time, left_at_time, travel_time) {
+        function to_minutes(time) {
+            if (!time.includes(":")) {
+                time = Number(time);
+
+                if (time > 59 || time < 0)
+                    return -1;
+
+                return time;
+            }
+
+            time = time.split(":")
+
+            if (time.length != 2)
+                return -1;
+
+            const hours   = Number(time[0]);
+            const minutes = Number(time[1]);
+
+            if (hours > 23 || hours < 0)
+                return -1;
+
+            if (minutes > 59 || minutes < 0)
+                return -1;
+
+            return (hours * 60) + minutes;
+        }
+
+        event_time   = to_minutes(event_time);
+        left_at_time = to_minutes(left_at_time);
+        travel_time  = to_minutes(travel_time);
+
+        if (event_time == -1)
+            return "Blogai įvestas renginio pradžios laikas! Tinka tik HH:MM formatas.";
+
+        if (left_at_time == -1)
+            return "Blogai įvestas išvykimo laikas! Tinka tik HH:MM formatas.";
+
+        if (travel_time == -1)
+            return "Blogai įvesta kelionės trukmė! Tinka tik HH:MM (arba MM) formatas.";
+
+        if (left_at_time - event_time > 12 * 60)
+            event_time += 24 * 60; // kai pvz.: event_time="00:30", o left_at_time="23:30"
+
+        const arrival_time = left_at_time + travel_time;
+
+        const difference = arrival_time - event_time;
+
+        if (difference < 0)
+            return "Suspėsite.";
+
+        if (difference == 0)
+            return "Atvykstate laiku.";
+
+        function get_form(number, one, few, many) {
+            if (number % 10 === 1 && number % 100 !== 11)
+                return one;
+
+            if (number % 10 >= 2 && number % 10 <= 9 && (number % 100 < 10 || number % 100 >= 20))
+                return few;
+
+            return many;
+        }
+
+        const hours = Math.floor(difference / 60);
+        const minutes = difference % 60;
+        
+        let ret = "Vėluosite "
+
+        if (hours > 0) {
+            ret += `${hours} ${get_form(hours, "valandą", "valandas", "valandų")}`;
+
+            if (minutes > 0)
+                ret += " ir ";
+        }
+
+        if (minutes > 0)
+            ret += `${minutes} ${get_form(minutes, "minutę", "minutes", "minučių")}`;
+
+        return ret;
+    }
+
+    const times = prompt("Ar spėsite į renginį? Įveskite renginio laiką, išvykimo laiką ir kelionės laiką (pvz.: \"14:30, 13:45, 35\").").split(",");
+
+    if (times.length != 3)
+        alert("Neteisingai įvedėt laikus...");
+    else
+        alert(is_late(times[0], times[1], times[2]));
+
+    // 7.
+    function financial_status(income, expenses, purchase_price) {
+        if (!Number.isFinite(income) || !Number.isFinite(expenses) || !Number.isFinite(purchase_price) ||
+            income < 0 || expenses < 0 || purchase_price < 0)
+
+            return "Pajamos, išlaidos ir pirkinio kaina turi būti neneigiami skaičiai.";
+
+        const balance = income - expenses;
+
+        if (balance < 0)
+            return `Išlaidos viršija pajamas. Trūksta €${Math.abs(balance).toFixed(2)}.`;
+
+        if (balance == 0)
+            return "Biudžetas subalansuotas.";
+
+        let result = `Po išlaidų lieka €${balance.toFixed(2)}.`;
+
+        if (balance >= income * 0.2)
+            result += "\nRekomenduojama dalį pinigų atidėti taupymui.";
+
+        const yearly_savings = balance * 12;
+
+        result += `\nPer 12 mėnesių galima sutaupyti €${yearly_savings.toFixed(2)}, jei kas mėnesį atidedamas visas likutis.`;
+
+        if (purchase_price > 0) {
+            const months = Math.ceil(purchase_price / balance);
+
+            result += `\nNorimam pirkiniui reikės taupyti ${months} mėn.`;
+        }
+
+        return result;
+    }
+
+    const income = Number(prompt("Įveskite mėnesio pajamas."));
+    const expenses = Number(prompt("Įveskite mėnesio išlaidas."));
+    const purchase_price = Number(prompt("Įveskite norimo pirkinio kainą."));
+
+    alert(financial_status(income, expenses, purchase_price));
+
+    // 8.
+    function grade_comment(grade) {
+        if (!Number.isInteger(grade) || grade < 1 || grade > 10)
+            return "Netinkamas pažymys! Įveskite skaičių nuo 1 iki 10.";
+
+        if (grade <= 3)
+            return "Reikia daugiau praktikos.";
+        else if (grade <= 5)
+            return "Dar nepakanka.";
+        else if (grade <= 8)
+            return "Geras rezultatas.";
+        else
+            return "Puikiai!";
+    }
+
+    function final_grade(coursework, exam) {
+        if (!Number.isInteger(coursework) || coursework < 1 || coursework > 10 ||
+            !Number.isInteger(exam)       || exam       < 1 || exam       > 10)
+
+            return "Netinkami pažymiai! Įveskite skaičius nuo 1 iki 10.";
+
+        const result = Math.round(coursework * 0.4 + exam * 0.6);
+
+        if (exam < 4)
+            return `Galutinis rezultatas neigiamas, nes egzamino pažymys mažesnis nei 4. Apskaičiuotas vidurkis: ${result}.`;
+
+        return `Galutinis pažymys: ${result}.`;
+    }
+
+    function required_exam(coursework, desired_grade) {
+        if (!Number.isInteger(coursework)    || coursework    < 1 || coursework    > 10 ||
+            !Number.isInteger(desired_grade) || desired_grade < 1 || desired_grade > 10)
+
+            return "Netinkami pažymiai! Įveskite skaičius nuo 1 iki 10.";
+
+        if (desired_grade < 4)
+            return "Norimas rezultatas neigiamas...";
+
+        const needed = Math.round((desired_grade - (coursework * 0.4)) / 0.6);
+
+        if (needed > 10)
+            return "Norimo galutinio pažymio pasiekti neįmanoma.";
+
+        return `Norint gauti bent ${desired_grade}, egzamine reikia bent ${needed}.`;
+    }
+
+    const grade = Number(prompt("Įveskite pažymį nuo 1 iki 10."));
+
+    alert(grade_comment(grade));
+
+    const coursework = Number(prompt("Įveskite kontrolinio darbo pažymį."));
+    const exam = Number(prompt("Įveskite egzamino pažymį."));
+
+    alert(final_grade(coursework, exam));
+
+    const desired_grade = Number(prompt("Kokio galutinio pažymio norite?"));
+
+    alert(required_exam(coursework, desired_grade));
+</script>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi explicabo eos unde, deserunt consequatur maxime tempora at deleniti reiciendis quidem, perspiciatis tempore harum molestias, quos beatae velit pariatur! Eveniet.</p>
+</body>
+</html>
