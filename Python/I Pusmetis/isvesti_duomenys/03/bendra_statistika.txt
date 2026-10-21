@@ -1,0 +1,14 @@
+BENDROJI TEMPERATŪRŲ STATISTIKA
+
+Analizuotų dienų skaičius: 365
+Vidutinė temperatūra: 8.4 °C
+Temperatūros mediana: 8.6 °C
+
+Karščiausios dienos:
+2023-31-7 (Pirmadienis) -- 30.0 °C
+
+Šalčiausios dienos:
+2023-10-2 (Penktadienis) -- -14.8 °C
+
+Dienų, kai temperatūra >  25 °C: 28
+Dienų, kai temperatūra < -10 °C: 20

@@ -1,0 +1,15 @@
+2023-02-04 (Šeštadienis) -- AUDRA: krituliai 10.6 mm, vėjas 16.1 m/s
+2023-02-11 (Šeštadienis) -- AUDRA: krituliai 10.9 mm, vėjas 19.5 m/s
+2023-02-13 (Pirmadienis) -- AUDRA: krituliai 11.3 mm, vėjas 15.5 m/s
+2023-02-19 (Sekmadienis) -- AUDRA: krituliai 11.7 mm, vėjas 17.2 m/s
+2023-09-03 (Sekmadienis) -- AUDRA: krituliai 15.1 mm, vėjas 16.3 m/s
+2023-09-22 (Penktadienis) -- AUDRA: krituliai 22.9 mm, vėjas 15.6 m/s
+2023-09-28 (Ketvirtadienis) -- AUDRA: krituliai 12.2 mm, vėjas 17.1 m/s
+2023-10-07 (Šeštadienis) -- AUDRA: krituliai 21.1 mm, vėjas 16.6 m/s
+2023-10-14 (Šeštadienis) -- AUDRA: krituliai 18.7 mm, vėjas 15.8 m/s
+2023-10-19 (Ketvirtadienis) -- AUDRA: krituliai 18.6 mm, vėjas 15.3 m/s
+2023-10-23 (Pirmadienis) -- AUDRA: krituliai 13.1 mm, vėjas 16.7 m/s
+2023-10-25 (Trečiadienis) -- AUDRA: krituliai 13.3 mm, vėjas 15.3 m/s
+2023-10-28 (Šeštadienis) -- AUDRA: krituliai 11.9 mm, vėjas 17.3 m/s
+2023-11-14 (Antradienis) -- AUDRA: krituliai 20.5 mm, vėjas 17.7 m/s
+2023-11-17 (Penktadienis) -- AUDRA: krituliai 14.5 mm, vėjas 17.4 m/s

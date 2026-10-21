@@ -1,0 +1,60 @@
+ŽIEMA
+Analizuotų dienų skaičius: 90
+Vidutinė temperatūra: -6.1 °C
+Kritulių suma: 589.7 mm
+Vidutinis vėjo greitis: 11.1 m/s
+
+Šalčiausios dienos:
+2023-02-10 (Penktadienis) -- temperatūra: -14.8 °C; krituliai: 0.4 mm; vėjas: 7.9 m/s
+Šilčiausios dienos:
+2023-01-11 (Trečiadienis) -- temperatūra: 2.9 °C; krituliai: 9.8 mm; vėjas: 6.9 m/s
+Daugiausia kritulių:
+2023-01-30 (Pirmadienis) -- temperatūra: -14.1 °C; krituliai: 12.0 mm; vėjas: 13.5 m/s
+
+
+
+PAVASARIS
+Analizuotų dienų skaičius: 92
+Vidutinė temperatūra: 9.0 °C
+Kritulių suma: 926.9 mm
+Vidutinis vėjo greitis: 7.7 m/s
+
+Šalčiausios dienos:
+2023-04-12 (Trečiadienis) -- temperatūra: 0.2 °C; krituliai: 10.9 mm; vėjas: 11.5 m/s
+Šilčiausios dienos:
+2023-04-09 (Sekmadienis) -- temperatūra: 17.8 °C; krituliai: 9.3 mm; vėjas: 10.3 m/s
+Daugiausia kritulių:
+2023-04-13 (Ketvirtadienis) -- temperatūra: 17.0 °C; krituliai: 19.8 mm; vėjas: 7.2 m/s
+
+
+
+VASARA
+Analizuotų dienų skaičius: 92
+Vidutinė temperatūra: 22.0 °C
+Kritulių suma: 1676.2 mm
+Vidutinis vėjo greitis: 5.6 m/s
+
+Šalčiausios dienos:
+2023-07-12 (Trečiadienis) -- temperatūra: 14.3 °C; krituliai: 31.5 mm; vėjas: 5.2 m/s
+Šilčiausios dienos:
+2023-07-31 (Pirmadienis) -- temperatūra: 30.0 °C; krituliai: 14.0 mm; vėjas: 2.9 m/s
+Daugiausia kritulių:
+2023-07-02 (Sekmadienis) -- temperatūra: 27.3 °C; krituliai: 34.8 mm; vėjas: 11.0 m/s
+
+
+
+RUDUO
+Analizuotų dienų skaičius: 91
+Vidutinė temperatūra: 8.4 °C
+Kritulių suma: 1180.6 mm
+Vidutinis vėjo greitis: 9.9 m/s
+
+Šalčiausios dienos:
+2023-09-19 (Antradienis) -- temperatūra: 2.2 °C; krituliai: 0.7 mm; vėjas: 10.1 m/s
+Šilčiausios dienos:
+2023-11-25 (Šeštadienis) -- temperatūra: 14.8 °C; krituliai: 6.0 mm; vėjas: 12.3 m/s
+Daugiausia kritulių:
+2023-09-23 (Šeštadienis) -- temperatūra: 8.6 °C; krituliai: 24.7 mm; vėjas: 13.0 m/s
+
+
+

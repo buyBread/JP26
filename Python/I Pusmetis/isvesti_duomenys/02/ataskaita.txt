@@ -1,0 +1,38 @@
+Brangiausios prekės:
+1. NE030185 | Nešiojamasis kompiuteris | Elektronika | 899.99 Eur
+2. IB040193 | Ištraukiama sofa | Baldai | 699.99 Eur
+3. ŽE030086 | Žaidimų konsolė | Elektronika | 499.99 Eur
+4. DB040241 | Dvivietė sofa | Baldai | 499.99 Eur
+5. DB040223 | Drabužių spinta | Baldai | 399.99 Eur
+6. IE030249 | Išmanusis telefonas | Elektronika | 399.99 Eur
+7. LB040123 | Lovos rėmas | Baldai | 279.99 Eur
+8. VB040122 | Valgomojo stalas | Baldai | 249.99 Eur
+9. PE030209 | Planšetinis kompiuteris | Elektronika | 249.99 Eur
+10. ME030142 | Monitorius 27 colių | Elektronika | 229.99 Eur
+
+Prekės, kurių likutis yra mažiau nei 5 vnt.:
+1. EE030203 | Elektroninė skaityklė | Elektronika | 0 vnt.
+2. ME030181 | Mikrofonas | Elektronika | 0 vnt.
+3. RS060036 | Rankinis ravėtuvas | Sodas | 1 vnt.
+4. PV070165 | Puodo dangtis 24 cm | Virtuvė | 2 vnt.
+5. DH080207 | Dantų šepetėlis | Higiena | 4 vnt.
+
+Visų kategorijų statistika:
+|        Kategorija        |  Prekių įrašų skaičius   |     Bendras likutis      |   Vidutinė kaina, Eur    |    Atsargų vertė, Eur    |
+----------------------------------------------------------------------------------------------------------------------------------------
+|       Elektronika        |                       25 |                     2670 |                   133.19 |                341828.30 |
+|          Sodas           |                       25 |                     2420 |                    17.14 |                 30281.00 |
+|         Virtuvė          |                       25 |                     2682 |                    13.25 |                 37133.68 |
+|         Higiena          |                       25 |                     2232 |                     4.07 |                  7751.88 |
+|       Automobiliai       |                       25 |                     2343 |                    20.23 |                 58835.57 |
+|         Maistas          |                       25 |                     2687 |                     3.45 |                 11510.23 |
+|          Baldai          |                       25 |                     2457 |                   158.51 |                347212.43 |
+|         Apranga          |                       25 |                     2761 |                    36.07 |                 97258.39 |
+|         Sportas          |                       25 |                     2390 |                    23.97 |                 57077.60 |
+|       Kanceliarija       |                       25 |                     2784 |                     4.21 |                 12179.86 |
+
+SANDĖLIO SUVESTINĖ
+Prekių įrašų skaičius: 250
+Kategorijų skaičius: 10
+Bendras vienetų likutis: 25426
+Bendra sandėlio vertė: 1001068.94 Eur

@@ -1,0 +1,30 @@
+GERIAUSIAI BESIMOKANTYS STUDENTAI
+1 Raminta Banelis -- 9.75
+2 Tomas Sakalauskas -- 9.56
+3 Kamilė Kazlauskas -- 9.5
+4 Agnė Petrėnaitė -- 9.0
+5 Viltė Zalanskas -- 8.6
+6 Ema Stonys -- 8.33
+7 Liepa Zelba -- 8.33
+8 Viltė Juciūtė -- 8.0
+9 Monika Rimkus -- 8.0
+
+STUDENTAI, KURIEMS TRŪKSTA PAŽYMIŲ
+Viktorija Kvietkus -- turi 1, iki 3 pažymių trūksta: 2.
+Neda Vaičiulis -- turi 2, iki 3 pažymių trūksta: 1.
+Urtė Petrauskas -- turi 1, iki 3 pažymių trūksta: 2.
+Arnas Zelba -- turi 2, iki 3 pažymių trūksta: 1.
+Aivaras Trumpaitė -- turi 2, iki 3 pažymių trūksta: 1.
+Liepa Zabarauskaitė -- turi 1, iki 3 pažymių trūksta: 2.
+Edgaras Petrauskaitė -- turi 1, iki 3 pažymių trūksta: 2.
+Jonas Valantinaitė -- turi 1, iki 3 pažymių trūksta: 2.
+Lukas Zabarauskaitė -- turi 2, iki 3 pažymių trūksta: 1.
+Edgaras Stonys -- turi 2, iki 3 pažymių trūksta: 1.
+
+GRUPĖS STATISTIKA
+Studentų, kurių vidurkis skaičiuojamas: 40
+Studentų vidurkių vidurkis: 6.45
+Studentų vidurkių mediana: 6.4
+Didžiausias vidurkis: 9.75
+Mažiausias vidurkis: 2.33
+Pažangių studentų (vidurkis ≥ 8): 10

@@ -1,0 +1,96 @@
+01 -- SAUSIS
+Analizuotų dienų skaičius: 31
+Vidutinė temperatūra: -4.5 °C
+Aukščiausia temperatūra: 2.9 °C
+Žemiausia temperatūra: -14.1 °C
+Kritulių suma: 220.3 mm
+Vidutinis vėjo greitis: 11.1 m/s
+
+02 -- VASARIS
+Analizuotų dienų skaičius: 28
+Vidutinė temperatūra: -7.4 °C
+Aukščiausia temperatūra: 2.1 °C
+Žemiausia temperatūra: -14.8 °C
+Kritulių suma: 184.6 mm
+Vidutinis vėjo greitis: 10.5 m/s
+
+03 -- KOVAS
+Analizuotų dienų skaičius: 31
+Vidutinė temperatūra: 7.7 °C
+Aukščiausia temperatūra: 17.7 °C
+Žemiausia temperatūra: 0.3 °C
+Kritulių suma: 328.6 mm
+Vidutinis vėjo greitis: 7.5 m/s
+
+04 -- BALANDIS
+Analizuotų dienų skaičius: 30
+Vidutinė temperatūra: 9.4 °C
+Aukščiausia temperatūra: 17.8 °C
+Žemiausia temperatūra: 0.2 °C
+Kritulių suma: 296.8 mm
+Vidutinis vėjo greitis: 7.6 m/s
+
+05 -- GEGUŽĖ
+Analizuotų dienų skaičius: 31
+Vidutinė temperatūra: 9.9 °C
+Aukščiausia temperatūra: 17.4 °C
+Žemiausia temperatūra: 0.7 °C
+Kritulių suma: 301.5 mm
+Vidutinis vėjo greitis: 7.9 m/s
+
+06 -- BIRŽELIS
+Analizuotų dienų skaičius: 30
+Vidutinė temperatūra: 22.3 °C
+Aukščiausia temperatūra: 29.9 °C
+Žemiausia temperatūra: 14.4 °C
+Kritulių suma: 609.6 mm
+Vidutinis vėjo greitis: 5.2 m/s
+
+07 -- LIEPA
+Analizuotų dienų skaičius: 31
+Vidutinė temperatūra: 21.7 °C
+Aukščiausia temperatūra: 30.0 °C
+Žemiausia temperatūra: 14.3 °C
+Kritulių suma: 505.4 mm
+Vidutinis vėjo greitis: 7.1 m/s
+
+08 -- RUGPJŪTIS
+Analizuotų dienų skaičius: 31
+Vidutinė temperatūra: 21.9 °C
+Aukščiausia temperatūra: 29.5 °C
+Žemiausia temperatūra: 14.5 °C
+Kritulių suma: 561.2 mm
+Vidutinis vėjo greitis: 4.6 m/s
+
+09 -- RUGSĖJIS
+Analizuotų dienų skaičius: 30
+Vidutinė temperatūra: 8.0 °C
+Aukščiausia temperatūra: 14.3 °C
+Žemiausia temperatūra: 2.2 °C
+Kritulių suma: 405.8 mm
+Vidutinis vėjo greitis: 10.6 m/s
+
+10 -- SPALIS
+Analizuotų dienų skaičius: 31
+Vidutinė temperatūra: 9.0 °C
+Aukščiausia temperatūra: 13.9 °C
+Žemiausia temperatūra: 2.9 °C
+Kritulių suma: 384.9 mm
+Vidutinis vėjo greitis: 10.4 m/s
+
+11 -- LAPKRITIS
+Analizuotų dienų skaičius: 30
+Vidutinė temperatūra: 8.2 °C
+Aukščiausia temperatūra: 14.8 °C
+Žemiausia temperatūra: 2.4 °C
+Kritulių suma: 389.9 mm
+Vidutinis vėjo greitis: 8.5 m/s
+
+12 -- GRUODIS
+Analizuotų dienų skaičius: 31
+Vidutinė temperatūra: -6.5 °C
+Aukščiausia temperatūra: 1.2 °C
+Žemiausia temperatūra: -14.7 °C
+Kritulių suma: 184.8 mm
+Vidutinis vėjo greitis: 11.8 m/s
+

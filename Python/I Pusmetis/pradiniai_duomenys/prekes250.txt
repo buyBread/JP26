@@ -1,0 +1,250 @@
+Obuolių sultys 1 l;Maistas;1.99
+Oro filtras;Automobiliai;14.49
+Druska 1 kg;Maistas;0.99
+Išmanusis laikrodis;Elektronika;99.99
+Televizoriaus spintelė;Baldai;139.99
+Tinklinio kamuolys;Sportas;18.99
+Ryžiai 1 kg;Maistas;2.49
+Pomidorų sėklos;Sodas;1.49
+Dubenėlis 500 ml;Virtuvė;3.49
+Išorinė baterija;Elektronika;29.49
+Monitorius 24 colių;Elektronika;149.99
+Drėgnos servetėlės;Higiena;1.89
+Lietpaltis;Apranga;59.99
+Dviračio žibintų komplektas;Sportas;22.99
+Razinos 200 g;Maistas;1.89
+Suknelė;Apranga;49.99
+Sniego šepetys;Automobiliai;7.99
+Šokoladas 100 g;Maistas;1.99
+Lauko kėdė;Baldai;44.99
+Automobilinis dulkių siurblys;Automobiliai;49.99
+Užrašų knygelė;Kanceliarija;4.99
+Automobilio lemputė H7;Automobiliai;5.49
+Indų džiovyklė;Virtuvė;17.99
+Langų ploviklis 4 l;Automobiliai;5.99
+Riešutų mišinys 200 g;Maistas;3.99
+Masažinis volelis;Sportas;17.99
+Klaviatūra;Elektronika;29.99
+Sijonas;Apranga;27.99
+Lūpų balzamas;Higiena;2.99
+Prijuostė;Apranga;11.99
+Šokdynė;Sportas;5.99
+Virtuvinių rankšluosčių komplektas;Virtuvė;8.99
+Avarinis trikampis;Automobiliai;8.49
+Ausų krapštukai;Higiena;1.19
+Salono kilimėlių komplektas;Automobiliai;34.99
+Rankinis ravėtuvas;Sodas;6.49
+Džemperis;Apranga;34.99
+Pilvo preso ratukas;Sportas;11.99
+Mikropluošto šluosčių komplektas;Automobiliai;6.99
+Silikoninė mentelė;Virtuvė;4.49
+Salotų sėklos;Sodas;0.99
+Dantų siūlas;Higiena;2.79
+Hantelių pora 2 kg;Sportas;12.99
+Vejos trąšos 5 kg;Sodas;14.99
+Šalikas;Apranga;14.99
+Plaukų kondicionierius 250 ml;Higiena;5.49
+Plaukimo akiniai;Sportas;12.49
+Pomidorų padažas 500 g;Maistas;2.19
+Vaikiška kėdė;Baldai;29.99
+Drožtukas;Kanceliarija;1.19
+Trintukų komplektas;Kanceliarija;1.29
+Valgomojo kėdė;Baldai;49.99
+Gėlių vazonas 2 l;Sodas;4.99
+Žemės riešutų sviestas 350 g;Maistas;3.79
+Padangų remonto rinkinys;Automobiliai;16.99
+Konservuotos pupelės 400 g;Maistas;1.39
+Badmintono rinkinys;Sportas;19.49
+Išorinis SSD 1 TB;Elektronika;89.99
+Užvedimo laidai;Automobiliai;19.99
+Atšvaitinė liemenė;Automobiliai;4.99
+Laistymo žarna 20 m;Sodas;24.99
+Segtuvas;Kanceliarija;3.49
+Spausdintuvas;Elektronika;129.49
+Pižama;Apranga;22.99
+Batų spintelė;Baldai;89.99
+Dviračio spyna;Sportas;19.99
+Termo marškiniai;Apranga;25.99
+Skriestuvas;Kanceliarija;4.49
+Malta kava 500 g;Maistas;7.99
+Belaidės ausinės;Elektronika;59.99
+Daržovių skustukas;Virtuvė;2.99
+Bagažinės organizatorius;Automobiliai;22.99
+Dviračio šalmas;Sportas;34.99
+Vazono padėklas;Sodas;1.99
+Lininiai marškiniai;Apranga;44.99
+Šortai;Apranga;18.99
+Kvietiniai miltai 2 kg;Maistas;2.19
+Elektrinė vejapjovė;Sodas;159.99
+Pirštinės;Apranga;12.49
+Vaikiškas stalas;Baldai;59.99
+Konservų atidarytuvas;Virtuvė;5.99
+USB atmintinė 128 GB;Elektronika;17.99
+Riedučiai;Sportas;69.99
+Kojinių komplektas;Apranga;6.99
+Džinsai;Apranga;39.99
+Žaidimų konsolė;Elektronika;499.99
+Termo kelnės;Apranga;23.99
+Biuro kėdė;Baldai;149.99
+Chalatas;Apranga;32.99
+Tualetinis popierius 8 ritinėliai;Higiena;4.49
+Salono filtras;Automobiliai;12.49
+Pieštukų komplektas;Kanceliarija;1.99
+Automobilinis USB įkroviklis;Automobiliai;12.99
+Laidinės ausinės;Elektronika;14.99
+Alyvuogių aliejus 500 ml;Maistas;6.99
+Riedlentė;Sportas;44.99
+Virtuvinis peilis;Virtuvė;14.99
+Knygų lentyna;Baldai;79.99
+Sodo žirklės;Sodas;14.99
+Termosas 750 ml;Virtuvė;19.99
+Nagų žirklutės;Higiena;4.49
+Stalo organizatorius;Kanceliarija;8.99
+Dantų pasta 75 ml;Higiena;2.99
+Jogos kilimėlis;Sportas;14.99
+Teniso kamuoliukų komplektas;Sportas;6.99
+Naktinis staliukas;Baldai;39.99
+Makaronai 500 g;Maistas;1.49
+Puodas 5 l;Virtuvė;44.99
+Skylamušis;Kanceliarija;6.99
+Automobilio šampūnas 1 l;Automobiliai;8.99
+Vairo užvalkalas;Automobiliai;11.99
+Dezodorantas;Higiena;3.79
+Sportinės kelnės;Apranga;24.99
+USB atmintinė 32 GB;Elektronika;7.99
+Lauko stalas;Baldai;119.99
+Komoda;Baldai;189.99
+Šampūnas 250 ml;Higiena;4.99
+Čiužinys;Baldai;199.99
+Dušo gelis 250 ml;Higiena;3.99
+USB šakotuvas;Elektronika;24.49
+Sulankstoma kėdė;Baldai;19.99
+Valgomojo stalas;Baldai;249.99
+Lovos rėmas;Baldai;279.99
+USB-C kabelis 1 m;Elektronika;6.99
+Grikiai 800 g;Maistas;2.99
+Pjaustymo lentelė;Virtuvė;9.99
+Tunas savo sultyse 185 g;Maistas;2.49
+Interneto kamera;Elektronika;39.99
+Konservuoti pomidorai 400 g;Maistas;1.59
+Krepšinio kamuolys;Sportas;24.99
+Ledo grandiklis;Automobiliai;3.99
+Kepurė;Apranga;9.99
+Stalo teniso rakečių rinkinys;Sportas;14.49
+Prieškambario suoliukas;Baldai;74.99
+Belaidė pelė;Elektronika;19.99
+Darbo stalas;Baldai;129.99
+Popierinės nosinaitės;Higiena;0.99
+Sodo karutis;Sodas;69.99
+Saulėgrąžų aliejus 1 l;Maistas;2.99
+Arbatinukas 1 l;Virtuvė;22.99
+Puodas 2 l;Virtuvė;29.99
+Monitorius 27 colių;Elektronika;229.99
+Grėblys;Sodas;12.99
+Hantelių pora 5 kg;Sportas;29.99
+Žirklės;Kanceliarija;3.99
+Žalioji arbata 100 g;Maistas;3.99
+Skutimosi putos;Higiena;3.29
+Automobilio kompresorius;Automobiliai;44.99
+Fotelis;Baldai;229.99
+Plaukų šepetys;Higiena;6.99
+Agurkų sėklos;Sodas;1.29
+Higieninių įklotų pakelis;Higiena;3.49
+Kūno losjonas 250 ml;Higiena;6.49
+Matavimo indas 1 l;Virtuvė;4.99
+Spalvotų pieštukų komplektas;Kanceliarija;6.49
+Diržas;Apranga;19.99
+Telefono laikiklis automobiliui;Automobiliai;14.99
+Trintuvė;Virtuvė;6.99
+Keraminis puodelis 300 ml;Virtuvė;4.99
+Kompostas 40 l;Sodas;7.99
+Žymeklių komplektas;Kanceliarija;4.99
+Keptuvė 28 cm;Virtuvė;34.99
+Apsauginis kremas nuo saulės;Higiena;9.99
+Kalendorius;Kanceliarija;5.49
+Puodo dangtis 24 cm;Virtuvė;12.99
+Sieninė lentyna;Baldai;22.99
+Flomasterių komplektas;Kanceliarija;5.99
+Pasipriešinimo gumų komplektas;Sportas;9.99
+Teniso raketė;Sportas;49.99
+Plakimo šluotelė;Virtuvė;3.99
+A4 popierius 500 lapų;Kanceliarija;5.49
+Laistytuvas 10 l;Sodas;9.99
+Automobilio akumuliatorius;Automobiliai;89.99
+Sąsiuvinis langeliais;Kanceliarija;0.99
+Lipni juosta;Kanceliarija;1.49
+Pieštukinė;Kanceliarija;7.49
+Skystas muilas 500 ml;Higiena;3.49
+Vilnonis paltas;Apranga;149.99
+Veido kremas 50 ml;Higiena;8.99
+Rankų dezinfekantas 100 ml;Higiena;2.19
+Mikrofonas;Elektronika;49.99
+Bluetooth kolonėlė;Elektronika;44.99
+Sodo pirštinės;Sodas;3.99
+Žieminė striukė;Apranga;119.99
+Nešiojamasis kompiuteris;Elektronika;899.99
+Segiklis;Kanceliarija;5.99
+Gėlių vazonas 10 l;Sodas;12.49
+Žarnos purkštukas;Sodas;7.99
+Kepimo forma;Virtuvė;12.49
+Sėdynės užvalkalas;Automobiliai;24.49
+Skustuvų komplektas;Higiena;5.99
+Dviračio pompa;Sportas;16.49
+Ištraukiama sofa;Baldai;699.99
+Liniuotė 30 cm;Kanceliarija;1.39
+Kiaurasamtis;Virtuvė;7.99
+Sportinė palaidinė;Apranga;21.99
+HDMI kabelis 2 m;Elektronika;8.99
+Universalus substratas 20 l;Sodas;5.99
+Liemenė;Apranga;39.49
+Medus 500 g;Maistas;5.99
+Maisto dėžutė 1 l;Virtuvė;5.49
+Morkų sėklos;Sodas;0.99
+Elektroninė skaityklė;Elektronika;139.99
+Belaidis maršrutizatorius;Elektronika;64.99
+Telefono įkroviklis;Elektronika;19.49
+Virtuvinė taburetė;Baldai;24.99
+Dantų šepetėlis;Higiena;1.99
+Kavos staliukas;Baldai;69.99
+Planšetinis kompiuteris;Elektronika;249.99
+Mineralinis vanduo 1.5 l;Maistas;0.99
+Lėkštė 26 cm;Virtuvė;5.49
+Sodo kastuvas;Sodas;19.99
+Sportinė gertuvė 750 ml;Sportas;8.99
+Megztinis;Apranga;29.99
+Burnos skalavimo skystis 500 ml;Higiena;4.79
+Stiklo valytuvų komplektas;Automobiliai;24.99
+Sportinis krepšys;Sportas;24.49
+Pakabinama spintelė;Baldai;64.99
+Aušinimo skystis 1 l;Automobiliai;6.49
+Darbinės kelnės;Apranga;42.99
+Avižiniai dribsniai 500 g;Maistas;1.79
+Medvilniniai marškinėliai;Apranga;12.99
+Drabužių spinta;Baldai;399.99
+Vatos diskeliai;Higiena;1.49
+Juodoji arbata 100 g;Maistas;3.49
+Augalų atramų komplektas;Sodas;8.49
+Gėlių trąšos 1 l;Sodas;4.99
+Tušinukų komplektas;Kanceliarija;2.49
+Sodinimo mentelė;Sodas;4.49
+Sodo genėjimo pjūklas;Sodas;16.99
+Vejos sėklos 1 kg;Sodas;8.99
+Plaukimo kepuraitė;Sportas;4.99
+Klijų pieštukas;Kanceliarija;1.69
+Skaičiuotuvas;Kanceliarija;12.99
+Futbolo kamuolys;Sportas;19.99
+Rankų kremas 75 ml;Higiena;2.49
+Lipnūs lapeliai;Kanceliarija;2.29
+Cukrus 1 kg;Maistas;1.29
+Kavos pupelės 1 kg;Maistas;16.99
+Stalo įrankių rinkinys;Virtuvė;24.99
+Dvivietė sofa;Baldai;499.99
+Stiklinė 250 ml;Virtuvė;1.99
+Variklio alyva 5 l;Automobiliai;39.99
+Paspirtukas;Sportas;79.99
+Sausainiai 200 g;Maistas;2.29
+Dokumentų aplankas;Kanceliarija;1.49
+Virtuvinės svarstyklės;Virtuvė;16.99
+Sąsiuvinis linijomis;Kanceliarija;0.99
+Išmanusis telefonas;Elektronika;399.99
+Padangų slėgio matuoklis;Automobiliai;9.99
