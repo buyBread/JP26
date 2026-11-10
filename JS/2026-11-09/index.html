@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>5.1</title>
+</head>
+<body>
+    <h1>Vanilla JavaScript and LocalStorage CRUD project</h1>
+
+    <div>
+        <section class="product-form">
+            <form id="product-form">
+                <label for="id">Product Code</label>
+                <input type="text" id="id" placeholder="only numbers...">
+
+                <label for="name">Product Name</label>
+                <input type="text" id="name">
+
+                <label for="count">Product Quantity</label>
+                <input type="text" id="count">
+
+                <div class="form-buttons">
+                    <button type="button" id="btn-add">Insert Product</button>
+                    <button type="button" id="btn-edit">Edit selected...</button>
+                    <button type="button" id="btn-rm">Delete selected...</button>
+                </div>
+            </form>
+            
+            <table id="product-table" hidden>
+                <thead>
+                    <tr>
+                        <th>Product Code</th>
+                        <th>Product Name</th>
+                        <th>Product Quantity</th>
+                    </tr>
+                </thead>
+                <tbody id="product-table-all"></tbody>
+            </table>
+        </section>
+
+        <section class="cart-section">
+            <h2>Find Product by Code</h2>
+
+            <form id="cart-form">
+                <label for="cart-id">Product Code</label>
+                <input type="text" id="cart-id" placeholder="only numbers...">
+
+                <div class="form-buttons">
+                    <button type="button" id="btn-cart-add">Add to Cart</button>
+                </div>
+            </form>
+
+            <table id="cart-table" hidden>
+                <thead>
+                    <tr>
+                        <th>Product Code</th>
+                        <th>Product Name</th>
+                        <th>Product Quantity</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-table-items"></tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
